@@ -14,5 +14,8 @@ This repository contains CIDR (Classless Inter-Domain Routing) lists organized b
 - All subnets presented in CIDR format
 
 ## License
-As these lists based on database that originate from MaxMind GeoLite2 data, it is implied that the original GeoLite2 End User License Agreement may apply to them too.
+As these lists are based on a database originating from MaxMind GeoLite2 data, it is implied that the original GeoLite2 End User License Agreement may apply to them too.
+
 Please see: https://www.maxmind.com/en/geolite2/eula
+
+Any scripts here may be used as you see fit.
