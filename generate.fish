@@ -25,13 +25,13 @@ function generate-ips
 
 
 	echo " Merging ipv6s.."
-	python merge.py --source $name.ipv6.cidr >$name.ipv6.cidr.txt
+	python utils/merge.py --source $name.ipv6.cidr >$name.ipv6.cidr.txt
 
 	echo -n "    Filtering ipv4s.."
-	cat GeoIP-ipv4.csv| rg "$searchline"|awk -F',' '{print substr($1,2,length($1)-2)" "substr($2,2,length($2)-2)}'|python ipcalc.py>$name.ipv4.cidr
+	cat GeoIP-ipv4.csv| rg "$searchline"|awk -F',' '{print substr($1,2,length($1)-2)" "substr($2,2,length($2)-2)}'|python utils/ipcalc.py >$name.ipv4.cidr
 
 	echo " Merging ipv4s.."
-	python merge.py --source $name.ipv4.cidr >$name.ipv4.cidr.txt
+	python utils/merge.py --source $name.ipv4.cidr >$name.ipv4.cidr.txt
 
     rm *.cidr
 end
