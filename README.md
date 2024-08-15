@@ -20,3 +20,8 @@ As these lists are based on a database originating from MaxMind GeoLite2 data, i
 Please see: https://www.maxmind.com/en/geolite2/eula
 
 Any scripts here may be used as you see fit.
+
+## Sister projects
+Here's list of another data I use for my router configs:
+  * [ipnames](https://github.com/antonme/ipnames): daily updated list of FQDNs and resolved IPs of some popular sites/platforms. Made for routing of some VPNs in my router
+  * [ipranges](https://github.com/antonme/ipranges): list IP ranges of: Google, Bing, Amazon, Microsoft, Azure, Oracle, DigitalOcean, GitHub, Facebook, Twitter, Linode, Yandex, Vkontakte with regular auto-updates
