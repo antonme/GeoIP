@@ -12,6 +12,7 @@ This repository contains CIDR (Classless Inter-Domain Routing) lists organized b
 - Separated by IPv4 and IPv6
 - Subnets merged for a little bit of compression
 - All subnets presented in CIDR format
+- Run generate.fish to update the data manually; it is easily configurable to change/add regions that you may want
 
 ## License
 As these lists are based on a database originating from MaxMind GeoLite2 data, it is implied that the original GeoLite2 End User License Agreement may apply to them too.
