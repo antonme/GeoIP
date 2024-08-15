@@ -1,3 +1,7 @@
+#!/usr/bin/env fish
+# filter ip lists from csv database
+# https://github.com/antonme/GeoIP
+
 function prepare
 	rm GeoIP-legacy.csv.gz 2>/dev/null
 	echo "### Preparing data"
@@ -14,9 +18,7 @@ function prepare
 	rm GeoIP-legacy.csv
 end
 
-
 function generate-ips
-
 	set name $argv[1]
 	echo
 	echo    "### Generating lists for $name"
@@ -35,9 +37,8 @@ function generate-ips
 
     rm *.cidr
 end
-#set DATE $(date "+%y%m%d-%H%M")
-#mv GeoIP-legacy.csv GeoIP-legacy.$DATE.csv
 
+# Download data and filter it by ip protocol version
 prepare
 
 # Europe as per https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Country_codes
