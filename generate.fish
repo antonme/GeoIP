@@ -20,6 +20,7 @@ end
 
 function generate-ips
 	set name $argv[1]
+	set searchline $argv[2]
 	echo
 	echo    "### Generating lists for $name"
 	echo -n "    Filtering ipv6s.."
@@ -35,7 +36,7 @@ function generate-ips
 	echo " Merging ipv4s.."
 	python utils/merge.py --source $name.ipv4.cidr >$name.ipv4.cidr.txt
 
-    rm *.cidr
+	#rm *.cidr
 end
 
 # Download data and filter it by ip protocol version
