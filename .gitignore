@@ -4,3 +4,4 @@ data
 pyproject.toml
 uv.lock
 GeoIP-legacy.csv
+GeoIP-ipv6.csv
