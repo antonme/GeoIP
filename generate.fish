@@ -50,3 +50,7 @@ generate-ips russia "RU"
 generate-ips cis "RU|BY|KZ|KG|AM|AZ|MD|TJ|UZ"
 generate-ips us "US"
 generate-ips cn "CN|HK|MO"
+
+echo
+echo "### Compressing GeoIP-ipv6.csv"
+gzip -f GeoIP-ipv6.csv

@@ -26,9 +26,6 @@ jobs:
       - name: Generate GeoIP data
         run: fish generate.fish
 
-      - name: Gzip IPv6 CSV
-        run: gzip -f GeoIP-ipv6.csv
-
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
